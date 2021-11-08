@@ -1,6 +1,9 @@
 import string
-text_path = 'south africa flowers edited.txt'
-text_open = (text_path, 'r')
+import os
+
+os.chdir('/Users/jangandiambil/Desktop')
+text_path = '/Users/jangandiambil/Desktop/CS_SEM1/Algorithm_and_Programming/ALGOPRO HW_JOSHUA S/Files_exercise/Flowers of South Africa.txt'
+text_open = open(text_path, 'r')
 text = text_open.read().lower().replace("\n","")
 
 new_text = ""
